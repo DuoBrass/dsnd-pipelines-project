@@ -1,55 +1,81 @@
-# README Template
+# Clothing Review Recommendation Classifier
 
-Below is a template provided for use when building your README file for students.
-
-# Project Title
-
-Project description goes here.
+This project builds a machine learning pipeline to predict whether a customer recommends a clothing product based on review text and metadata features. It includes data preprocessing, feature engineering, and hyperparameter tuning of a Logistic Regression classifier.
 
 ## Getting Started
 
-Instructions for how to get a copy of the project running on your local machine.
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Dependencies
 
 ```
-Examples here
+pandas
+scikit-learn
+numpy
 ```
 
 ### Installation
 
-Step by step explanation of how to get a dev environment running.
+Step by step explanation of how to get a dev environment running (for anaconda prompt)
 
-List out the steps
+1.Clone the repository:
 
 ```
-Give an example here
-```
+git clone https://github.com/yourusername/clothing-review-classifier.git
 
+```
+2.Change directory into the project folder:
+
+```
+cd clothing-review-classifier
+
+```
+3.Create a virtual environment
+```
+python -m venv venv
+source venv/bin/activate
+
+```
+4.Install required packages:
+```
+pip install -r requirements.txt
+
+```
 ## Testing
 
-Explain the steps needed to run any automated tests
+To run automated tests, run:
+```
+pytest tests/
 
+```
 ### Break Down Tests
 
-Explain what each test does and why
-
-```
-Examples here
-```
+- test_data_loading.py — verifies dataset loads without errors.
+- test_preprocessing.py — tests correct handling of missing values and encoding.
+- test_model_training.py — ensures model pipeline trains and predicts as expected.
 
 ## Project Instructions
 
-This section should contain all the student deliverables for this project.
+- Load and explore the dataset.
+
+- Preprocess numeric, categorical, and text data appropriately.
+
+- Build a pipeline combining preprocessing with Logistic Regression.
+
+- Fine-tune model hyperparameters
+
+- Evaluate on test set for accuracy/precision
 
 ## Built With
 
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
+- Python - Programming language
 
-Include all items used to build project.
+- pandas - Data manipulation
+
+- scikit-learn - Machine learning pipeline and models
 
 ## License
 
-[License](LICENSE.txt)
+MIT License
+
+
